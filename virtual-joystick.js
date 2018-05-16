@@ -1,3 +1,6 @@
+// Original Copyright (c) 2011 Jerome Etienne, http://jetienne.com
+// Adapted for use with ESP32BotRemote by Jason Kirsons
+
 var VirtualJoystick = function(opts) {
   opts = opts || {};
   this._container = opts.container /*|| document.body*/ ;
