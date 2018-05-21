@@ -9,20 +9,20 @@ var VirtualJoystick = function(opts) {
   this._baseEl = opts.baseElement || this._buildJoystickBase();
   this._mouseSupport = opts.mouseSupport !== undefined ? opts.mouseSupport : false;
   this._stationaryBase = opts.stationaryBase || false;
-  this._baseX = this._stickX = opts.baseX || 0
-  this._baseY = this._stickY = opts.baseY || 0
-  this._limitStickTravel = opts.limitStickTravel || false
-  this._stickRadius = opts.stickRadius !== undefined ? opts.stickRadius : 100
-  this._useCssTransform = opts.useCssTransform !== undefined ? opts.useCssTransform : false
+  this._baseX = this._stickX = opts.baseX || 0;
+  this._baseY = this._stickY = opts.baseY || 0;
+  this._limitStickTravel = opts.limitStickTravel || false;
+  this._stickRadius = opts.stickRadius !== undefined ? opts.stickRadius : 100;
+  this._useCssTransform = opts.useCssTransform !== undefined ? opts.useCssTransform : false;
 
-  this._container.style.position = "absolute"
+  this._container.style.position = "absolute";
 
-  this._container.appendChild(this._baseEl)
-  this._baseEl.style.position = "absolute"
-  this._baseEl.style.display = "none"
-  this._container.appendChild(this._stickEl)
-  this._stickEl.style.position = "absolute"
-  this._stickEl.style.display = "none"
+  this._container.appendChild(this._baseEl);
+  this._baseEl.style.position = "absolute";
+  this._baseEl.style.display = "none";
+  this._container.appendChild(this._stickEl);
+  this._stickEl.style.position = "absolute";
+  this._stickEl.style.display = "none";
 
   this._pressed = false;
   this._touchIdx = null;
